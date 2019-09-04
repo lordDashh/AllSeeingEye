@@ -13,13 +13,14 @@ To install this bot. You will need:
 
 ### Installing
 
-Clone the repository.
+1. Clone the repository.
 
 ```
 $ git clone https://github.com/lordDashh/AllSeeingEye.git
 ```
 
-Get into the project's directory and run the bot.
+2. In the data folder, Rename `config.example.json` to `config.json` and replace the values with yours.
+3. Get into the project's directory and run the bot!
 
 ```
 $ cd AllSeeingEye
