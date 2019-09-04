@@ -1,4 +1,4 @@
-# Project Title
+# All Seeing Eye
 
 The All Seeing Eye is a Discord bot programmed in Ruby.
 
