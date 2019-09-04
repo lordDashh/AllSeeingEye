@@ -1,0 +1,6 @@
+{
+  "token": "TOKEN HERE",
+  "invite": "BOT INVITE URL HERE",
+  "clientId": 0, // BOT CLIENT ID HERE
+  "globalPrefix": "/" // PREFIX OF BOT HERE
+}
