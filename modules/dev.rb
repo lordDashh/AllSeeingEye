@@ -8,6 +8,11 @@ module Modules
       break unless is_owner? event.user.id
 
       begin
+        # Parse the supplied code if it's within a codeblock.
+        if code[0].start_with? '```rb'
+          code[0] = code[0][5..-1]
+          code[-1] = code[-1][0..code[-1].length - 4]
+        end
         eval code.join(' ')
       rescue => e
         event.channel.send_embed do |embed|

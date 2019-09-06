@@ -1,6 +1,10 @@
 {
   "token": "TOKEN HERE",
   "invite": "BOT INVITE URL HERE",
-  "clientId": 0, // BOT CLIENT ID HERE
-  "globalPrefix": "/" // PREFIX OF BOT HERE
+  "clientId": 0, // APPLICATION CLIENT ID HERE
+  "botId": 0, // ID OF THE BOT HERE
+  "globalPrefix": "/", // PREFIX OF BOT HERE
+  "owners": [
+    // ID OF YOU AND OTHERS IF YOU TRUST THEM
+  ]
 }

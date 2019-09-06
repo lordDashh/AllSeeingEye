@@ -14,8 +14,11 @@ $bot = Discordrb::Commands::CommandBot.new(
   ignore_bots: false
 )
 
+# Load db.
+Database.load 'data'
+
 # Globals
-$embed_color = 0xa01b09 # Default embed color
+$embed_color = 0xa01b09 # Default embed color.
 
 # Information about commands will be stored in this.
 $command_map = {
@@ -43,7 +46,7 @@ $bot.command :help, max_args: 1 do |event, cmd_name|
     end
 
     # Command doesn't exist
-    "That command is out of existence." unless cmd
+    return "That command is out of existence." unless cmd
 
     # It exists, send info about it.
     event.channel.send_embed do |embed|

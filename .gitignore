@@ -11,6 +11,9 @@
 /tmp/
 
 data/config.json
+data/database.sqlite
+modules/secret.rb
+Gemfile.lock
 
 # Used by dotenv library to load environment variables.
 # .env
