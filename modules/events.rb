@@ -3,7 +3,7 @@ module Modules
     extend Discordrb::EventContainer
 
     ready do |event|
-      event.bot.watching = "everything"
+      event.bot.watching = "over #{event.bot.users.length} people."
     end
 
     # Upon recieving a message, attempt to retrieve the entry of the message author and create one if it doesnt exist

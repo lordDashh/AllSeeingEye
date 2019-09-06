@@ -14,5 +14,14 @@ module Modules
         embed.colour = $embed_color
       end
     end
+
+    add_command 'Misc', 'about', 'Information about the eye.'
+    command :about do |event|
+      event.channel.send_embed do |embed|
+        embed.title = 'About The All Seeing Eye',
+        embed.description = "The Eye is an open source multipurpose discord bot programmed in Ruby by lord_dashh#9912 for the sake of fun in his freetime.\nThe source code can be found [here.](https://github.com/lordDashh/AllSeeingEye)"
+        embed.colour = $embed_color
+      end
+    end
   end
 end
