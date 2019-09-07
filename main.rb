@@ -85,7 +85,7 @@ end
 # Add containers
 Dir.glob('modules/*.rb') do |file|
   require_relative file
-  container = file.gsub('modules/', '').gsub('.rb', '').capitalize
+  container = file.gsub('modules/','').gsub('.rb', '').capitalize
   $bot.include! Object.const_get('Modules::' + container)
 end
 

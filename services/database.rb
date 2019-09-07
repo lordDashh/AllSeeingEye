@@ -14,6 +14,7 @@ class Database
       @DB = SQLite3::Database.new @db_path
       @DB.execute 'CREATE TABLE main_table(server_id int, user_id int, xp float);'
       @DB.execute 'CREATE TABLE warns_table(server_id int, user_id, int, warn_id string, warn_reason string, warn_mod int);'
+      @DB.execute 'CREATE TABLE server_info(server_id int, join_msg string, join_channel int);'
     end
     @DB.results_as_hash = true
     print " Done.\n"
